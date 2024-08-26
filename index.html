@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .grid-box {
+      background-color: #F0F1EC;
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template-rows: 421px 149px 156px 20px;
+      grid-template-columns: 329px 207px 162px 50px;
+      /* grid-gap: 9px; */
+
+    }
+
+    .red {
+      background-color: #E72F24;
+      grid-area: 1/1;
+      /* border-right:9px solid black; */
+      border-bottom: 9px solid black;
+      border-right: 9px solid black;
+    }
+
+    .Blue {
+      background-color: #004592;
+      grid-area: -4 / 4 / -3 /5;
+      border-bottom: 10px solid black;
+    }
+
+    .black {
+      background-color: #232629;
+      grid-area: 4 / -3 / 5 /-2;
+      border-left: 4.5px solid black;
+      border-right: 9px solid black;
+    }
+
+    .Yellow {
+      background-color: #F9D01E;
+      grid-area: 4/ -4/ 5 /-3;
+      border-right: 4.5px solid black;
+    }
+
+    .transparent1 {
+      grid-area: 1 / 2 / 2 / 5;
+      border-bottom: 9px solid black;
+    }
+
+    .transparent2 {
+      grid-area: 2/1/4/2;
+      border-bottom: 9px solid black;
+      border-right: 9px solid black;
+    }
+
+    .transparent3 {
+      grid-area: 2 / 2/ 4/4;
+      border-bottom: 9px solid black;
+      border-right: 9px solid black;
+    }
+
+    .transparent4 {
+      grid-area: 4 / 1/ 5/2;
+      border-right: 9px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container-box">
+    <div class="grid-box">
+      <div class="red"></div>
+      <div class="Blue"></div>
+      <div class="Yellow"></div>
+      <div class="black"></div>
+      <div class="transparent1"></div>
+      <div class="transparent2"></div>
+      <div class="transparent3"></div>
+      <div class="transparent4"></div>
+    </div>
+  </div>
+</body>
+
+</html>
